@@ -1,5 +1,5 @@
 var randomQuote = "";
-var randomAuthor = "";
+
 
 function getQuote() {
   $.ajax({
@@ -8,15 +8,14 @@ function getQuote() {
       dataType: "jsonp",
       success: function(request) {
         randomQuote = request.quoteText;
-        randomAuthor = request.quoteAuthor;
+        
         $('#text').html(randomQuote);
-        if (randomAuthor === "")        { randomAuthor="Unknown";
-        }    $('#author').html(randomAuthor);
+        
  },
       error: function(xhr, status, error) 
 {
     $('#quoteText').text('Not sure what happened there! Click again to generate a new quote!');
-        $('#quoteAuthor').text('Click Below!');
+       
 }
   });
 }
