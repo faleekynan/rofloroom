@@ -138,7 +138,9 @@ height:150px;
 .expiry{
 	display: inline-grid;
     position: absolute;
-    top: 75.2%;
+    top: 74.5%;
+    font-size: 2rem;
+    right: 36rem;
 }
 input{
 	text-transform: uppercase;
@@ -188,6 +190,26 @@ input{
 
 
 @media (min-width: 600px) and (max-width: 1600px){
+	.btn input {
+    font-size: 1.5rem;
+}
+	.photo{
+		    right: 36.5rem;
+    top: 15.5rem;
+}
+	
+	.photo img {
+    width: 244px;
+    height: 323px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+	.expiry{
+		top: 74.75%;
+		right: 27.4rem;
+		    font-size: 1.38rem;
+	}
 .main{
     background-image: url(img/back2.jpg);
     background-position: right;
@@ -211,8 +233,7 @@ input{
 .first_name,
 .middle_name,
 .sex,
-.birth_day,
-.expiry{
+.birth_day{
 	right: 17rem;
 }
 .nationality,
@@ -256,8 +277,7 @@ screen and (min-device-pixel-ratio : 1.5) {
 .first_name,
 .middle_name,
 .sex,
-.birth_day,
-.expiry{
+.birth_day{
 	right: 19.5rem;
 }
 .nationality,
@@ -309,5 +329,11 @@ screen and (min-device-pixel-ratio : 1.5) {
 .btn input{
 	font-size:1.3rem;
 }
+
+.expiry{
+		right: 14.9rem;
+	top: 74.75%;
+		    font-size: 1.38rem;
+	}
 
 }
