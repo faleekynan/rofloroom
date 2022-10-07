@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Генератор - Rofloroom</title>
+<link rel="stylesheet" href="./style.css">
+<script  src="./script.js"></script>
+
+</head>
+<body>
+
+ <div class="btn">
+ <a href="en.html">Английские имена</a></br></br>
+ <input type='file' name="browser" id='file' style="
+    height: 100%;
+"/>
+</div>
+  <div class="main">
+  
+ <div class="back">
+ 
+
+
+	<div class="photo">
+	<img src='' id='preview' />
+	</div>
+	<div class="golo">
+	<IMG SRC="img\golo.png">
+	</div>
+<script>
+   
+                        pic = new Array(
+   '<img class="items" src="img/1.png"</img> ',
+   '<img class="items" src="img/2.png"</img> ',
+   '<img class="items" src="img/3.png"</img> ',
+   '<img class="items" src="img/4.png"</img> ',
+   '<img class="items" src="img/5.png"</img> ',
+   '<img class="items" src="img/6.png"</img> ',
+   '<img class="items" src="img/7.png"</img> ',
+   '<img class="items" src="img/8.png"</img> '
+                        );
+                        n = Math.floor(Math.random() * 3);
+                        document.write(pic[n]);
+                    
+</script> 
+<div class="last_name">
+	<input value = "Смирнова" oninput         ="document.getElementById ('trans').value = this.value.translit ()"
+       onpropertychange="document.getElementById ('trans').value = this.value.translit ()">
+	   <input value = "Smirnova" id="trans" readonly>
+	   </div>
+	   
+	   <div class="first_name">
+	<input value = "Катерина" oninput         ="document.getElementById ('trans1').value = this.value.translit ()"
+       onpropertychange="document.getElementById ('trans1').value = this.value.translit ()">
+	   <input value = "Katerina" id="trans1" readonly>
+	   </div>
+ 
+   
+    <div class="middle_name">
+    <input value = "Максимівна">
+    </div>
+	<div class="sex">
+    <input value = "Ж/F">
+    </div>
+	<div class="nationality">
+    <input value = "Україна/Ukr">
+    </div>
+	<div class="birth_day">
+    <input id="birth" name="results" type="text" value = "05 08 2005" >
+    </div>
+	<div class="record">
+   <input id="rec" name="results" type="text" value = "20050805">
+	
+    </div>
+	<div class="expiry">
+    <input id="exp" name="results" type="text" value = "23 08 2023" >
+    </div>
+	<div class="num_doc">
+
+<div id="doc_number"></div>
+</div>
+<script>
+var randomNumber = Math.floor((Math.random() * 8888888) + 1000000);
+document.getElementById("doc_number").innerHTML = randomNumber;
+</script>
+
+	
+	
+	
+	
+	<script> 
+	String.prototype.translit = (function(){
+    var L = {
+'А':'A','а':'a','Б':'B','б':'b','В':'V','в':'v','Г':'G','г':'g',
+'Д':'D','д':'d','Е':'E','е':'e','Ё':'Yo','ё':'yo','Ж':'Zh','ж':'zh',
+'З':'Z','з':'z','И':'I','и':'i','Й':'Y','й':'y','К':'K','к':'k',
+'Л':'L','л':'l','М':'M','м':'m','Н':'N','н':'n','О':'O','о':'o',
+'П':'P','п':'p','Р':'R','р':'r','С':'S','с':'s','Т':'T','т':'t',
+'У':'U','у':'u','Ф':'F','ф':'f','Х':'Kh','х':'kh','Ц':'Ts','ц':'ts',
+'Ч':'Ch','ч':'ch','Ш':'Sh','ш':'sh','Щ':'Sch','щ':'sch','Ъ':'"','ъ':'"',
+'Ы':'Y','ы':'y','Ь':"'",'ь':"'",'Э':'E','э':'e','Ю':'Yu','ю':'yu',
+'Я':'Ya','я':'ya','Ї':'Y','ї':'y'
+        },
+        r = '',
+        k;
+    for (k in L) r += k;
+    r = new RegExp('[' + r + ']', 'g');
+    k = function(a){
+        return a in L ? L[a] : '';
+    };
+    return function(){
+        return this.replace(r, k);
+    };
+})();
+
+	</script>
+	<script>
+	document.getElementById('birth').addEventListener('input', function(e){
+  e.target.value = e.target.value.split('.').join(' ');
+});
+	</script> 
+	<script>
+	document.getElementById('exp').addEventListener('input', function(e){
+  e.target.value = e.target.value.split('.').join(' ');
+});
+	</script> 
+	<script>
+	document.getElementById('rec').addEventListener('input', function(e){
+  e.target.value = e.target.value.split('.').join(' ');
+});
+	</script> 
+	
+    </div>
+  </div>
+</body>
+</html>
