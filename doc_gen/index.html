@@ -10,7 +10,7 @@
 <body>
 
  <div class="btn">
- <a href="en.html">Английские имена</a></br></br>
+
  <input type='file' name="browser" id='file' style="
     height: 100%;
 "/>
@@ -93,15 +93,17 @@
                     
 </script> 
 <div class="last_name">
-	<input value = "Смирнова" oninput         ="document.getElementById ('trans').value = this.value.translit ()"
+	<input value = "Смирнова" id="trans3" oninput         ="document.getElementById ('trans').value = this.value.translit ()"
        onpropertychange="document.getElementById ('trans').value = this.value.translit ()">
-	   <input value = "Smirnova" id="trans" readonly>
+	   <input value = "Smirnova" id="trans" oninput         ="document.getElementById ('trans3').value = this.value.translit ()"
+       onpropertychange="document.getElementById ('trans').value = this.value.translit ()">
 	   </div>
 	   
 	   <div class="first_name">
-	<input value = "Катерина" oninput         ="document.getElementById ('trans1').value = this.value.translit ()"
+	<input value = "Катерина" id="trans4" oninput         ="document.getElementById ('trans1').value = this.value.translit ()"
        onpropertychange="document.getElementById ('trans1').value = this.value.translit ()">
-	   <input value = "Katerina" id="trans1" readonly>
+	   <input value = "Katerina" id="trans1" oninput         ="document.getElementById ('trans4').value = this.value.translit ()"
+       onpropertychange="document.getElementById ('trans1').value = this.value.translit ()">
 	   </div>
  
    
@@ -140,15 +142,7 @@ document.getElementById("doc_number").innerHTML = randomNumber;
 	<script> 
 	String.prototype.translit = (function(){
     var L = {
-'А':'A','а':'a','Б':'B','б':'b','В':'V','в':'v','Г':'G','г':'g',
-'Д':'D','д':'d','Е':'E','е':'e','Ё':'Yo','ё':'yo','Ж':'Zh','ж':'zh',
-'З':'Z','з':'z','И':'I','и':'i','Й':'Y','й':'y','К':'K','к':'k',
-'Л':'L','л':'l','М':'M','м':'m','Н':'N','н':'n','О':'O','о':'o',
-'П':'P','п':'p','Р':'R','р':'r','С':'S','с':'s','Т':'T','т':'t',
-'У':'U','у':'u','Ф':'F','ф':'f','Х':'Kh','х':'kh','Ц':'Ts','ц':'ts',
-'Ч':'Ch','ч':'ch','Ш':'Sh','ш':'sh','Щ':'Sch','щ':'sch','Ъ':'"','ъ':'"',
-'Ы':'Y','ы':'y','Ь':"'",'ь':"'",'Э':'E','э':'e','Ю':'Yu','ю':'yu',
-'Я':'Ya','я':'ya','Ї':'Y','ї':'y'
+'А':'A','а':'a','Б':'B','б':'b','В':'V','в':'v','Г':'G','г':'g','Д':'D','д':'d','Е':'E','е':'e','Ё':'Yo','ё':'yo','Ж':'Zh','ж':'zh','З':'Z','з':'z','И':'I','и':'i','Й':'Y','й':'y','К':'K','к':'k','Л':'L','л':'l','М':'M','м':'m','Н':'N','н':'n','О':'O','о':'o','П':'P','п':'p','Р':'R','р':'r','С':'S','с':'s','Т':'T','т':'t','У':'U','у':'u','Ф':'F','ф':'f','Х':'Kh','х':'kh','Ц':'Ts','ц':'ts','Ч':'Ch','ч':'ch','Ш':'Sh','ш':'sh','Щ':'Sch','щ':'sch','Ъ':'"','ъ':'"','Ы':'Y','ы':'y','Ь':"'",'ь':"'",'Э':'E','э':'e','Ю':'Yu','ю':'yu','Я':'Ya','я':'ya','Ї':'Y','ї':'y',"A":"А","B":"Б","V":"В","G":"Г","D":"Д","E":"Е","YO":"Ё","ZH":"Ж","Z":"З","I":"И","J":"Й","K":"К","L":"Л","M":"М","N":"Н","O":"О","P":"П","R":"Р","S":"С","Т":"T","U":"У","F":"Ф","H":"Х","C":"К","CH":"Ч","SH":"Ш","SHH":"Щ","":"Ъ","Y":"Ы","":"Ь","q":"ку","YU":"Ю","YA":"Я","a":"а","b":"б","v":"в","g":"г","d":"д","e":"е","yo":"ё","zh":"ж","z":"з","i":"и","j":"й","k":"к","l":"л","m":"м","n":"н","o":"о","p":"п","r":"р","s":"с","t":"т","u":"у","f":"ф","h":"х","c":"к","Q":"КУ","ch":"ч","sh":"ш","shh":"щ","":"ъ","y":"ы","":"ь","W":"В","w":"в","yu":"ю","ya":"я"
         },
         r = '',
         k;
