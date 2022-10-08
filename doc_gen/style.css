@@ -177,6 +177,14 @@ input{
 .btn{
 	position: absolute;
     right: 0;
+	top: 2%;
+}
+.btn a{
+	background: #f2f2f2;
+    padding: 5px 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
 }
 .btn input{
 	font-size:1.7rem;
