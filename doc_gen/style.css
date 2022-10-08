@@ -185,6 +185,7 @@ input{
     color: #000;
     text-decoration: none;
     font-size: 20px;
+	border: 1px solid;
 }
 .btn input{
 	font-size:1.7rem;
