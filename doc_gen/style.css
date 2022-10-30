@@ -106,6 +106,7 @@ height:150px;
 .record input {
 	    word-spacing: -8px;
 		width: 32%;
+		outline: none;
 }
 
 
@@ -128,6 +129,7 @@ height:150px;
 #doc_number input{
 	text-shadow: 0 0 black;
 	text-align: left;
+	outline: none;
 	
 }
 .birth_day{
@@ -148,6 +150,7 @@ input{
     background: 0;
     border: 0;
 	text-align: left;
+	outline: none;
 }
 .golo{
 	    position: absolute;
@@ -183,6 +186,7 @@ input{
 
 .btn input{
 	font-size:1.7rem;
+	outline: none;
 }
 .num_doc{
 	 top: 74.5%;
@@ -195,6 +199,7 @@ input{
 @media (min-width: 600px) and (max-width: 1600px){
 	.btn input {
     font-size: 1.5rem;
+	outline: none;
 }
 	.photo{
 		    right: 36.5rem;
@@ -226,6 +231,7 @@ input{
 }
 input{
 	font-size: 1.38rem;
+	outline: none;
 }
 .first_name{
 	top: 36%;
@@ -294,6 +300,7 @@ screen and (min-device-pixel-ratio : 1.5) {
 }
 .record input{
 	width:35.5%;
+	outline: none;
 }
 .record::before{
 	font-size: 1.38rem;
@@ -333,6 +340,7 @@ screen and (min-device-pixel-ratio : 1.5) {
 }
 .btn input{
 	font-size:1.3rem;
+	outline: none;
 }
 
 .expiry{
