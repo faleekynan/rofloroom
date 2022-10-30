@@ -121,9 +121,16 @@
     </div>
 	<div class="record">
    <input onfocus="this.select()" id="rec" name="results" type="text" value = "20050805">
-	
     </div>
-	
+	<script>
+window.onload = function() {
+    var src = document.getElementById("birth"),
+        dst = document.getElementById("rec");
+    src.addEventListener('input', function() {
+        dst.value = src.value;
+    });
+};
+</script>
 	
 	
 	<div class="num_doc">
