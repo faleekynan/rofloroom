@@ -140,9 +140,9 @@ height:150px;
 .expiry{
 	display: inline-grid;
     position: absolute;
-    top: 74.5%;
+    top: 75%;
     font-size: 2rem;
-    right: 35.8rem;
+    right: 22.6rem;
 }
 input{
 	text-transform: uppercase;
@@ -215,8 +215,8 @@ input{
 	object-fit: cover;
 }
 	.expiry{
-		top: 74.75%;
-		right: 27.4rem;
+		top: 72.25%;
+		right: 17rem;
 		    font-size: 1.38rem;
 	}
 .main{
@@ -344,8 +344,8 @@ screen and (min-device-pixel-ratio : 1.5) {
 }
 
 .expiry{
-		right: 27.1rem;
-	top: 74.75%;
+		right: 19.5rem;
+	top: 75.55%;
 		    font-size: 1.38rem;
 	}
 
