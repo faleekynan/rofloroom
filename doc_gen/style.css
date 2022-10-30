@@ -215,7 +215,7 @@ input{
 	object-fit: cover;
 }
 	.expiry{
-		top: 72.25%;
+		top: 75%;
 		right: 17rem;
 		    font-size: 1.38rem;
 	}
@@ -345,7 +345,7 @@ screen and (min-device-pixel-ratio : 1.5) {
 
 .expiry{
 		right: 19.5rem;
-	top: 75.55%;
+	top: 75%;
 		    font-size: 1.38rem;
 	}
 
