@@ -1,8 +1,10 @@
-.ln_ua,
-.ln_en,
-.fn_ua,
-.fn_en{
-	
+#birth::placeholder,
+#rec::placeholder,
+.ln_ua::placeholder,
+.ln_en::placeholder,
+.fn_ua::placeholder,
+.fn_en::placeholder{
+	color:black;
 }
 
 
@@ -159,6 +161,8 @@ input{
     border: 0;
 	text-align: left;
 	outline: none;
+	text-shadow: 0 0 0 black;
+    color: transparent;
 }
 .golo{
 	    position: absolute;
