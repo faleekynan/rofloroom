@@ -4,6 +4,9 @@ window.onload = function() {
   let ln_ua = document.querySelector('.ln_ua');
   let ln_en = document.querySelector('.ln_en');
   
+  var src = document.getElementById("birth"),
+        dst = document.getElementById("rec");
+  
   fn_en.addEventListener('input', function() {
     fn_ua.value = translit(this.value);
   });
@@ -17,6 +20,11 @@ window.onload = function() {
   ln_ua.addEventListener('input', function() {
     ln_en.value = translit1(this.value);
   });
+  
+  
+    src.addEventListener('input', function() {
+        dst.value = src.value;
+    });
   
   
 };
