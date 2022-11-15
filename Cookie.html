@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Куки</title>
+
+
+</head>
+<body>
+<textarea style="width: 800px;height: 500px;" name="" id="textarea" ></textarea>
+<script>
+textarea.addEventListener('input', function(e) {
+	textarea.value = textarea.value.replace(/(\r\n|\n|\r)/gm, "");
+	textarea.value = textarea.value.replace(/ /gm, "");
+})
+</script>
+
+ 
+ 
+</body>
+</html>
