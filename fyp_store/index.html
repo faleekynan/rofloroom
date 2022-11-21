@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="logo">
+<h1>FYP Store</h1>
+</div>
+<div class="descriprion">
+<h2>Хочешь залить в ПЛЮС?? Купи аккаунт у FYP. Мы делаем только ПОЛОЖИТЕЛЬНЫЕ аккаунты!</h2>
+</div>
+<div class="top_menu">
+<nav>
+<a href="./index.html">Главная</a>
+ <a href="./index.html">О магазине</a>
+ <a href="./index.html">Правила магазина</a>
+ <a href="./index.html">Контакты</a>
+  
+  
+  
+</nav>
+</div>
+
+<div class="goods">
+
+<table>
+  <tr>
+  <td><a href="./index.html">ПЗРД аккаунты</a></td>
+    <td><a href="./index.html">ПЗРД аккаунты + БМ</a></td>
+  </tr>
+  <tr>
+    <td><a href="./index.html">ПЗРД фарм + 8-9 авторегов</a></td>
+    <td><a href="./index.html">ПЗРД Автореги</a></td>
+    
+  </tr>
+ 
+</table>
+
+</div>
+<div class="footer">
+<h1>Отзывы о нас</h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="text">3</div>
+</div>
+<div class="mySlides fade">
+  <div class="text">4</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+   <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div class="top_menu">
+<ul>
+  <li>Главная</li>
+  <li>О магазине</li>
+  <li>Правила магазина</li>
+  <li>Контакты</li>
+</ul>
+</div>
+</body>
+</html>
