@@ -2,14 +2,17 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Генератор - by Rofloroom</title>
+  <title>Дизельный генератор - by FYP</title>
 <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 
  <div class="btn">
-
+  <br>
+ <a class="btn_current">You Photo</a>
+<a class="btn_change" href="./index_random_photo.html">Random Photo</a>
+<br><br><br>
  <input type='file' name="browser" id='file' style="
     height: 100%;
 "/>
@@ -28,69 +31,11 @@
 	</div>
 	
 	<div class="expiry">
-	<script>
-   
-                        pic = new Array(
-'<input value = "04 01 2025">',
-'<input value = "14 10 2030">',
-'<input value = "23 12 2023">',
-'<input value = "24 11 2030">',
-'<input value = "02 11 2028">',
-'<input value = "19 03 2029">',
-'<input value = "06 10 2028">',
-'<input value = "05 06 2026">',
-'<input value = "23 06 2023">',
-'<input value = "03 04 2024">',
-'<input value = "24 08 2026">',
-'<input value = "05 01 2027">',
-'<input value = "06 05 2030">',
-'<input value = "27 02 2025">',
-'<input value = "29 11 2028">',
-'<input value = "27 09 2023">',
-'<input value = "18 08 2028">',
-'<input value = "15 12 2025">',
-'<input value = "08 12 2027">',
-'<input value = "09 12 2023">',
-'<input value = "10 11 2028">',
-'<input value = "20 02 2027">',
-'<input value = "03 09 2030">',
-'<input value = "16 07 2023">',
-'<input value = "14 09 2029">',
-'<input value = "26 02 2030">',
-'<input value = "28 08 2023">',
-'<input value = "05 02 2027">',
-'<input value = "06 04 2027">',
-'<input value = "02 04 2030">',
-'<input value = "22 01 2029">',
-'<input value = "26 10 2023">',
-'<input value = "30 12 2026">',
-'<input value = "21 08 2023">',
-'<input value = "22 10 2029">'
-                        );
-                        n = Math.floor(Math.random() * 35);
-                        document.write(pic[n]);
-                    
-</script> 
+	<script  src="./expiry.js"></script>
 	</div>
 	
 	
-	
-<script>
-   
-                        pic = new Array(
-   '<img class="items" src="img/1.png"</img> ',
-   '<img class="items" src="img/2.png"</img> ',
-   '<img class="items" src="img/3.png"</img> ',
-   '<img class="items" src="img/4.png"</img> ',
-   '<img class="items" src="img/5.png"</img> ',
-   '<img class="items" src="img/6.png"</img> ',
-   '<img class="items" src="img/7.png"</img> ',
-   '<img class="items" src="img/8.png"</img> '
-                        );
-                        n = Math.floor(Math.random() * 8);
-                        document.write(pic[n]);
-                    
-</script> 
+	<script  src="./signe.js"></script>
 <div class="last_name">
 	<input type="text" onfocus="this.select()" value = "Смирнова" class="ln_ua" id="ln_ua">
 	   <input type="text" onfocus="this.select()" value = "Smirnova" class="ln_en" id="ln_en">
@@ -106,31 +51,7 @@
 	   
    
     <div class="middle_name">
-    	<script>
-   
-                        pic = new Array(
-
-'<input onfocus="this.select()" value = "Олександрівна">',
-'<input onfocus="this.select()" value = "Олегівна">',
-'<input onfocus="this.select()" value = "Максимівна">',
-'<input onfocus="this.select()" value = "Дмитрівна">',
-'<input onfocus="this.select()" value = "Павлівна">',
-'<input onfocus="this.select()" value = "Владиславівна">',
-'<input onfocus="this.select()" value = "Володимирівна">',
-'<input onfocus="this.select()" value = "Сергіївна">',
-'<input onfocus="this.select()" value = "Євгенівна">',
-'<input onfocus="this.select()" value = "Юріївна">',
-'<input onfocus="this.select()" value = "Олексіївна">',
-'<input onfocus="this.select()" value = "Ілівна">',
-'<input onfocus="this.select()" value = "Іванівна">',
-'<input onfocus="this.select()" value = "Василівна">',
-'<input onfocus="this.select()" value = "Віталіївна">',
-'<input onfocus="this.select()" value = "Петрівна">'
-                        );
-                        n = Math.floor(Math.random() * 16);
-                        document.write(pic[n]);
-                    
-</script> 
+    	<script  src="./middle_name.js"></script>
     </div>
 	<div class="sex">
     <input value = "Ж/F">
@@ -156,10 +77,6 @@ var randomNumber = Math.floor((Math.random() * 8888888) + 1000000);
 document.getElementById("doc_number").innerHTML = randomNumber;
 </script>
 
-	
-	
-	
-	
 	
 	<script>
 	document.getElementById('birth').addEventListener('input', function(e){
