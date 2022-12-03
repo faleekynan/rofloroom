@@ -9,10 +9,16 @@
 <body>
 
  <div class="btn">
- <br>
+  <br>
  <a class="btn_change" href="./index.html">You Photo</a>
 <a class="btn_current">Random Photo</a>
-<br><br><br>
+<br><br>
+<p class="alert">Соблюдение формата - ОБЯЗАТЕЛЬНО!!!</p>
+<textarea rows="3" name="main_row" class="main_row"  onfocus="this.select()" id="main_row"  type="text">Укр/Ру в формате -  Фамилия Имя Дата рождения</textarea>
+<br><br>
+<textarea rows="3" disabled name="en_main_row" class="main_row"  onfocus="this.select()" id="en_main_row"  type="text">En в формате -  Фамилия Имя Дата рождения</textarea>
+<br><br><br><br>
+ 
 </div>
   <div class="main">
   
@@ -21,50 +27,42 @@
 
 
 	<div class="photo" id="photo">
-	<script  src="./random_ava.js"></script>
-
+	
 	</div>
 	<div class="golo">
 	<IMG SRC="img\golo.png">
 	</div>
 	
-	<div class="expiry">
+	
 	<script  src="./expiry.js"></script>
-	</div>
 	
 	
 	
-<script  src="./signe.js"></script>
+	<script  src="./signe.js"></script>
 
-<div class="last_name">
-	<input type="text" onfocus="this.select()" value = "Смирнова" class="ln_ua" id="ln_ua">
-	   <input type="text" onfocus="this.select()" value = "Smirnova" class="ln_en" id="ln_en">
-	   </div>
-	   
-	   <div class="first_name">
-	<input type="text" onfocus="this.select()" value = "Катерина" class="fn_ua" >
-	   <input type="text" onfocus="this.select()" value = "Katerina" class="fn_en" >
-	   </div>
-	   
-	   
+<textarea rows="3" name="ru"  id="ru" class="ru"  type="text" ></textarea>
+
+
+
+	   <textarea rows="3" class="en" name="en"  id="en"  type="text" ></textarea></br>
+<textarea rows="3"  class="record_row" name="record_row"  id="record_row"  type="text" ></textarea>
+	   <textarea rows="3" name="date"  id="date" class="date_row"  type="text" ></textarea>
 	   
 	   
    
     <div class="middle_name">
     	<script  src="./middle_name.js"></script>
     </div>
-	<div class="sex">
-    <input value = "Ж/F">
-    </div>
-	<div class="nationality">
-    <input value = "Україна/Ukr">
-    </div>
+	
+    <textarea class="sex" >Ж/F</textarea>
+    
+	
+    <textarea class="nationality" value = "">Україна/Ukr</textarea>
+   
 	<div class="birth_day">
-    <input onfocus="this.select()" id="birth" name="results" type="text" value = "05 08 2005" >
+   
     </div>
-	<div class="record">
-   <input onfocus="this.select()" id="rec" name="results" type="text" value = "20050805">
-    </div>
+	
 	
 	
 	
@@ -77,10 +75,6 @@ var randomNumber = Math.floor((Math.random() * 8888888) + 1000000);
 document.getElementById("doc_number").innerHTML = randomNumber;
 </script>
 
-	
-	
-	
-	
 	
 	<script>
 	document.getElementById('birth').addEventListener('input', function(e){
@@ -96,7 +90,7 @@ document.getElementById("doc_number").innerHTML = randomNumber;
 	
     </div>
   </div>
-  
+  <script  src="./random_ava.js"></script>
   <script  src="./script.js"></script>
 <script  src="./translate.js"></script>
 <script  src="./copy.js"></script>

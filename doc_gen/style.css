@@ -75,17 +75,7 @@ height:150px;
 	
 }
 
-.last_name,
-.first_name,
-.middle_name,
-.sex,
-.nationality,
-.record,
-.birth_day,
-.expiry{
-	opacity:0.7;
-	
-}
+
 
 .last_name{
 	display: inline-grid;
@@ -99,32 +89,24 @@ height:150px;
     top: 46%;
 }
 .middle_name{
-	display: inline-grid;
     position: absolute;
-    top: 56%;
+    top: 31rem;
+    left: 38.3rem;
 }
 .sex{
-	display: inline-grid;
     position: absolute;
-    top: 62.5%;
+        top: 34.5rem;
+    left: 38.3rem;
 }
 .nationality{
-	display: inline-grid;
+	
     position: absolute;
-    top: 62.5%;
+   top: 34.5rem;
+    left: 54.1rem;
+
 }
-.record{
-	text-align: left;
-    right: 3rem;
-    position: absolute;
-    top: 68.2%;
-	direction: rtl;
-}
-.record::before{
-	content:"002-";
-	margin-left: -12px;
-	font-size: 2rem;
-}
+
+
 
 .record input {
 	    word-spacing: -8px;
@@ -161,11 +143,9 @@ height:150px;
     top: 69%;
 }
 .expiry{
-	display: inline-grid;
     position: absolute;
-    top: 75%;
-    font-size: 2rem;
-    right: 22.6rem;
+    top: 42rem;
+    left: 38.2rem;
 }
 input{
 	text-transform: uppercase;
@@ -380,4 +360,80 @@ screen and (min-device-pixel-ratio : 1.5) {
 		    font-size: 1.38rem;
 	}
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+textarea{
+	opacity: 0.8;
+	    font-family: system-ui;
+ 
+ color:black;
+   outline : none;
+  resize : none;
+  overflow : auto;
+  border:none;
+  background:none;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+}
+
+.main_row{
+	opacity: 1;
+ outline : none;
+  resize : none;
+  overflow : auto;
+  border:solid 1px black;
+  width: 90%;
+    font-size: 1rem;
+}
+
+.ru{
+  position: absolute;
+    top: 18rem;
+    left: 38.2rem;
+    line-height: 90px;
+  
+}
+
+.en{
+ 
+ position: absolute;
+    top: 20.5rem;
+    left: 38.2rem;
+    line-height: 90px;
+}
+.date_row{
+	position: absolute;
+    top: 33.4rem;
+    left: 38.2rem;
+}
+
+.record_row{    
+  direction: rtl;
+  text-align: left;
+  word-spacing: -8px;
+  position: absolute;
+    top: 33.4rem;
+    left: 54.1rem;
+  
+}
+.record_row::before{
+	content:"002-";
+	margin-left: -12px;
+	font-size: 2rem;
+}
+.alert{
+	    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
