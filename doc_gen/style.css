@@ -1,9 +1,3 @@
-.ln_ua::placeholder,
-.ln_en::placeholder,
-.fn_ua::placeholder,
-.fn_en::placeholder{
-	color:black;
-}
 .btn_current{
 	background: bisque;
     padding: 10px 15px;
@@ -19,13 +13,17 @@
     text-decoration: none;
 	color: black;
 }
+body{
+	display: flex;
+	margin: 0;
+}
 
 .main{
     background-image: url(img/back1.jpg);
-    background-position: right;
-    /*background-size: contain;*/
+    /*background-position: right;*/
+    background-size: contain;
     height: 900px;
-    width: 1343px;
+    width: 70%;
     background-repeat: no-repeat;
 	overflow: hidden;
 	
@@ -40,36 +38,23 @@
 }
 .btn{
 	z-index: 999;
-	    height: 100%;
-		width: 27%;
+    height: 100%;
+    width: 28%;
+    margin-left: 2%;
 }
 
-.last_name,
-.first_name,
-.middle_name,
-.sex,
-.birth_day,
-.expiry{
-right: 22.6rem;
-	
-}
+
 .items{
 	position: absolute;
     top: 75%;
-    right: 30rem;
+    left: 53%;
 	width:150px;
 height:150px;
 }
 
 
 
-.nationality,
-.record{
-	text-transform: uppercase;
-    font-size: 1.875rem;
-	right: 6.8rem;
-	
-}
+
 #doc_number::before{
 	content: "00";
 	
@@ -77,99 +62,50 @@ height:150px;
 
 
 
-.last_name{
-	display: inline-grid;
-    position: absolute;
-        top: 20.2rem;
-}
-.first_name{
-	display: inline-grid;
-    position: absolute;
 
-    top: 46%;
-}
 .middle_name{
     position: absolute;
-    top: 31rem;
-    left: 38.3rem;
+    top: 55%;
+   
 }
-.sex{
-    position: absolute;
-        top: 34.5rem;
-    left: 38.3rem;
-}
+.sex,
 .nationality{
-	
-    position: absolute;
-   top: 34.5rem;
-    left: 54.1rem;
-
+	position: absolute; 
+	 top: 61.5%;
 }
 
-
-
-.record input {
-	    word-spacing: -8px;
-		width: 32%;
-		outline: none;
-}
 
 
 #doc_number{
 	display: contents;
     position: absolute;
 	font-family: system-ui;
-	font-size: 2rem;
+	font-size: 200%;
 	  
 }
 
-#doc_number00{
-	position: absolute;
-    display: contents;
-	opacity: 0.85;
-    font-family: system-ui;
-    font-size: 2rem;
-}
 
-#doc_number input{
-	text-shadow: 0 0 black;
-	text-align: left;
-	outline: none;
-	
-}
-.birth_day{
-	display: inline-grid;
-    position: absolute;
-    top: 69%;
-}
+
+
 .expiry{
     position: absolute;
-    top: 42rem;
-    left: 38.2rem;
+    top: 74.5%;
+    
 }
-input{
-	text-transform: uppercase;
-    font-size: 1.875rem;
-    background: 0;
-    border: 0;
-	text-align: left;
-	outline: none;
-	text-shadow: 0 0 0 black;
-    color: transparent;
-}
+
 .golo{
 	    position: absolute;
-   right: 33.7rem;
+   right: 40.1%;
     top: 39.8%;
 }
 .golo img{
-	   width: 64%;
+	   width: 63%;
 		
 }
 .photo{
 	    position: absolute;
- right: 48.5rem;
-    top: 21rem;
+     left: 18%;
+    top: 37%;
 }
 .photo img{
 	        width: 325px;
@@ -183,194 +119,18 @@ input{
   display: none;
 }
 
-.btn{
-	position: absolute;
-    right: 0;
-	
-}
+
 
 .btn input{
-	font-size:1.7rem;
+	font-size:180%;
 	outline: none;
 }
 .num_doc{
 	 top: 74.5%;
-    right: 20rem;
     position: absolute;
 	opacity: 0.85;
+	left: 64.3% !important;
 }
-
-
-@media (max-width: 1600px){
-	.btn{
-	z-index: 999;
-	    height: 100%;
-		width: 30%;
-}
-	.btn input {
-    font-size: 1.5rem;
-	outline: none;
-}
-	.photo{
-		    right: 36.5rem;
-    top: 15.5rem;
-}
-	
-	.photo img {
-    width: 244px;
-    height: 323px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.7;
-	object-fit: cover;
-}
-	.expiry{
-		top: 75%;
-		right: 17rem;
-		    font-size: 1.38rem;
-	}
-.main{
-    background-image: url(img/back2.jpg);
-    background-position: right;
-    /*background-size: contain;*/
-    height: 675px;
-    width: 1008px;
-    background-repeat: no-repeat;
-	overflow: hidden;
-	
-}
-input{
-	font-size: 1.38rem;
-	outline: none;
-}
-.first_name{
-	top: 36%;
-}
-.last_name{
-	top: 19.4rem;
-}
-.last_name,
-.first_name,
-.middle_name,
-.sex,
-.birth_day{
-	right: 17rem;
-}
-.nationality,
-.record{
-	right: 5.2rem;
-}
-.record{
-	right: 2.6rem;
-	top: 67.28%;
-}
-.record::before{
-	font-size: 1.38rem;
-}
-.num_doc{
-	right: 15.6rem;
-	top: 74.75%;
-}
-#doc_number{
-	font-size: 1.38rem;
-}
-.items{
-	width: 110px;
-    height: 110px;
-	    right: 23rem;
-}
-.golo{
-	    right: 19.7rem;
-}
-.golo img{
-	width: 48%;
-
-}
-
-}
-
-
-
-
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
-screen and (min-device-pixel-ratio : 1.5) { 
-.last_name,
-.first_name,
-.middle_name,
-.sex,
-.birth_day{
-	right: 19.5rem;
-}
-.nationality,
-.record{
-	right: 7.8rem;
-}
-.record{
-	right: 5.1rem;
-	top: 67.28%;
-}
-.record input{
-	width:35.5%;
-	outline: none;
-}
-.record::before{
-	font-size: 1.38rem;
-}
-.num_doc{
-	right: 14.9rem;
-	top: 74.75%;
-}
-#doc_number{
-	font-size: 1.38rem;
-}
-.items{
-	width: 110px;
-    height: 110px;
-	    right: 23rem;
-}
-.golo{
-	    right: 19.7rem;
-}
-.golo img{
-	width: 48%;
-
-}
-
-.photo{
-	    position: absolute;
- right: 36rem;
-    top: 15.5rem;
-}
-.photo img{
-	        width: 244px;
-    height: 323px;
-		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-	opacity: 0.7;
-	object-fit: cover;
-}
-.btn input{
-	font-size:1.3rem;
-	outline: none;
-}
-
-.expiry{
-		right: 19.5rem;
-	top: 75%;
-		    font-size: 1.38rem;
-	}
-
-}
-
-
-
-
-
-
-
-
-
-
 
 
 textarea{
@@ -383,7 +143,7 @@ textarea{
   overflow : auto;
   border:none;
   background:none;
-  font-size: 1.875rem;
+  font-size: 185%;
   text-transform: uppercase;
 }
 
@@ -394,46 +154,212 @@ textarea{
   overflow : auto;
   border:solid 1px black;
   width: 90%;
-    font-size: 1rem;
+    font-size: 130%;
 }
-
+.ru,
+.en,
+.date_row,
+.sex,
+.middle_name,
+.expiry
+{
+	left: 45.5%;
+}
 .ru{
   position: absolute;
-    top: 18rem;
-    left: 38.2rem;
-    line-height: 90px;
+        top: 32.2%;
+    
+    line-height: 310%;
   
 }
 
 .en{
  
  position: absolute;
-    top: 20.5rem;
-    left: 38.2rem;
-    line-height: 90px;
+    top: 36%;
+    
+    line-height: 310%;
+}
+.record_row,
+.date_row{
+	 top: 59.3%;
+	   position: absolute;
 }
 .date_row{
-	position: absolute;
-    top: 33.4rem;
-    left: 38.2rem;
+	
+   
+   
 }
 
 .record_row{    
   direction: rtl;
   text-align: left;
   word-spacing: -8px;
-  position: absolute;
-    top: 33.4rem;
-    left: 54.1rem;
+
   
 }
 .record_row::before{
 	content:"002-";
 	margin-left: -12px;
-	font-size: 2rem;
+	font-size: 200%;
 }
 .alert{
 	    color: red;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 130%;
 }
+
+.nationality,
+.num_doc,
+.record_row{
+	    left: 64%;
+}
+.code{
+	 position: absolute;
+	top: 68%;
+    left: 73.8%;
+}
+
+
+
+@media (max-width: 1600px){
+	.btn_current{
+    padding: 10px 15px;
+    font-size: 18px;
+}
+.btn_change{
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+
+.items{
+
+    top: 59.5%;
+    left: 52.75%;
+	width:112.5px;
+    height:112.5px;
+}
+
+.middle_name{
+    top: 43.7%;
+}
+.sex,
+.nationality{ 
+	 top: 49%;
+}
+
+
+
+#doc_number{
+	font-size: 150%;	  
+}
+
+
+
+.golo{
+       right: 33.1%;
+    top: 31.6%;
+}
+.golo img{
+	   width: 50%;	
+}
+.photo{
+    left: 20%;
+    top: 30.75%;
+}
+.photo img{
+	        width: 244px;
+    height: 323px;
+}
+
+.btn input{
+	font-size:135%;
+}
+.expiry,
+.num_doc{
+    top: 59%;   
+}
+.num_doc{
+
+	left: 64.5% !important;
+}
+
+
+textarea{
+  font-size: 150%;
+}
+
+.main_row{
+  width: 90%;
+    font-size: 97.5%;
+}
+.ru,
+.en,
+.date_row,
+.sex,
+.middle_name,
+.expiry
+{
+	left: 45.5%;
+}
+.ru{
+               top: 25.5%;
+    line-height: 300%;
+  
+}
+
+.en{
+    top: 28.5%;
+     line-height: 300%;
+}
+.record_row,
+.date_row{
+	 top: 47%;
+}
+
+
+.record_row::before{
+	font-size: 150%;
+}
+.alert{
+
+    font-size: 97.5%;
+}
+
+.nationality,
+.num_doc,
+.record_row{
+	    left: 64%;
+}
+
+.code{
+	top: 54%;
+}
+
+}
+@media (max-width: 1280px){
+
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
+screen and (min-device-pixel-ratio : 1.5) { 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
